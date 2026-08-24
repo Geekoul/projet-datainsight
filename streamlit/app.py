@@ -4,6 +4,7 @@ import plotly.express as px
 import seaborn as sns
 import matplotlib.pyplot as plt
 from streamlit_option_menu import option_menu
+from pathlib import Path
 
 # --- CONFIGURATION DE LA PAGE ---
 st.set_page_config(page_title="DataInsight Solutions - Application Sécurisée", layout="wide")
@@ -23,8 +24,10 @@ if "username" not in st.session_state:
 # ==========================================
 @st.cache_data
 def load_accounts():
-    """Lit le fichier accounts.csv"""
-    return pd.read_csv("accounts.csv")
+    """Lit le fichier accounts.csv situé dans le même dossier que app.py"""
+    BASE_DIR = Path(__file__).resolve().parent
+    accounts_path = BASE_DIR / "accounts.csv"
+    return pd.read_csv(accounts_path)
 
 def authenticate(username_input, password_input):
     """Vérifie si le couple (nom, mot de passe) existe dans le CSV"""
