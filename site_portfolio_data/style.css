@@ -1,0 +1,40 @@
+/* Style global du corps de la page */
+body {
+    background-color: #fefefe;
+    font-family: 'Helvetica', sans-serif;
+    margin: 40px;
+    color: #000000;
+}
+
+/* Style des titres principaux */
+h1 {
+    font-size: 32px;
+    text-align: center;
+    color: #de7471;
+    border-bottom: 2px solid #de7471;
+    padding-bottom: 10px;
+}
+
+/* Style des sous-titres */
+h2 {
+    font-size: 24px;
+    color: #de7471;
+    margin-top: 15px;
+}
+
+/* Style des paragraphes */
+p {
+    font-size: 18px;
+}
+
+/* Style des liens */
+a {
+    color: #1b62f0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Style au survol du curseur sur les liens */
+a:hover {
+    text-decoration: underline;
+}

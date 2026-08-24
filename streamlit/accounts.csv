@@ -1,0 +1,3 @@
+name,password,email,failed_login_attempts,logged_in,role
+utilisateur,mdp123,user@entreprise.com,0,False,utilisateur
+admin,admin123,admin@entreprise.com,0,False,administrateur
